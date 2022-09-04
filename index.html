@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News Hub24</title>
+
+    <!-- bootstrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fontawesome link  -->
+    <script src="https://kit.fontawesome.com/e6c06b9d07.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body class="bg-light">
+    <header>
+        <!-- navbar ends here  -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+              <a class="navbar-brand fw-bold fs-2 text-danger" href="index.html"><span class="bg-success text-white px-1">NEWS</span> HUB24</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                  <a class="nav-link active text-success px-3 fw-semibold" aria-current="page" href="index.html">News</a>
+                  <a class="nav-link active px-3 fw-semibold" href="blog.html">Blog</a>
+                  <a class="navbar-brand px-3 " href="index.html">
+                    <img src="images/Ellipse .png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- navbar ends here  -->
+
+          <section class="container">
+            <hr class=" mx-auto">
+          </section>
+          <!-- category list  -->
+          <section class="container">
+            <div id="category-list" class="d-md-flex d-lg-flex d-sm-row flex-lg-row flex-md-row flex-md-wrap">
+                <!-- <h6>International News</h6> -->
+            </div>
+          </section>
+    </header>
+    <main>
+      <!-- <section class="container py-3 my-2 bg-white rounded">
+        <h4> <span id=" category-list-number">items found for this category</h4>
+      </section> -->
+
+        <section class="container d-flex my-5">
+          <div class="sort-default">
+              <form>
+                  <label for="sort-select">Sort By View : </label>
+                  <select class="border-0 py-2 px-3 rounded" name="" id="sort-select">
+                      <option value="">Default</option>
+                      <option value="">New</option>
+                      <option value="">Most View</option>
+                  </select>
+              </form>
+          </div>
+          <div class="ms-auto">
+              <button class="btn btn-success">Todays Pick</button>
+              <button class="btn btn-outline-success">Trending</button>
+          </div>
+      </section>
+
+      <section id="news-container" class="container">
+          <!-- <div class="row">
+            <div class="col-md-4">
+              <img src="..." class="img-fluid rounded" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div> -->
+      </section>
+
+      <section>       
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Title : <br> <span  id="news-title" class="text-secondary"></span> </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="fw-bold">Author : <span  id="news-author" class="text-secondary"></span> </p>
+                  <p class="fw-bold">Published : <span  id="news-published-date" class="text-secondary"></span> </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="spinner" class="d-none">
+        <div class="d-flex justify-content-center align-items-center" style="height: 350px;" >
+          <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white text-center py-5 mt-5">
+        <small class="text-muted">Copyright @ 2022 | News Hub24.</small>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
